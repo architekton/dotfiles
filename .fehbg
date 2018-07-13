@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/home/sofos/backgrounds/bg.png' 
+feh --bg-scale '/home/sofos/backgrounds/bg.jpg' 
