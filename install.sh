@@ -49,9 +49,6 @@ ln -s "$SCRIPTPATH/.vim/.vimrc" "$HOME/.vimrc"
 bk_if_exists "$HOME/backgrounds"
 ln -s "$SCRIPTPATH/backgrounds" "$HOME/backgrounds"
 
-bk_if_exists "$HOME/.fehbg"
-ln -s "$SCRIPTPATH/.fehbg" "$HOME/.fehbg"
-
 bk_if_exists "$HOME/.Xresources"
 ln -s "$SCRIPTPATH/.Xresources" "$HOME/.Xresources"
 
@@ -60,9 +57,6 @@ ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
 # Compile ycm
 # python3 "$SCRIPTPATH/.vim/bundle/YouCompleteMe/install.py" --clang-completer
-
-chmod +x "$HOME/.fehbg"
-"$HOME/.fehbg"
 
 source "$HOME/.profile"
 source "$HOME/.bash_profile"
