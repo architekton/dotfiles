@@ -6,7 +6,7 @@ xset +fp ~/.fonts &
 xset fp rehash &
 
 # Background
-~/.fehbg &
+feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 
 # Status bar
 dwmstat &
