@@ -14,5 +14,5 @@ PS1='[\W]\[\e[36m\]-\[\e[35m\]-\[\e[33m\]-\[\e[39m\]> '
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -la --color=auto'
 
-alias rbash='source ~/.bashrc'
+alias bk="rsync -azv $HOME /mnt/backup"
 
