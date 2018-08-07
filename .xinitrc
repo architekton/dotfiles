@@ -9,9 +9,9 @@ xset fp rehash &
 feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 
 # Status bar
-dwmstat &
+dwmstat.sh &
 
 # Window manager
-exec dwm 
+exec dwm
 
 
