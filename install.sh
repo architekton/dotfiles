@@ -1,10 +1,8 @@
 #!/bin/sh
 
-#TODO
-
 BACKUP_DIR="$HOME/dotfiles.bk"
 
-# https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself#4774063
+# https://stackoverflow.com/a/4774063
 SCRIPTPATH="$(cd "$(dirname "$0")"; pwd -P)"
 
 if [ -d "$BACKUP_DIR" ]; then
@@ -38,13 +36,6 @@ ln -s "$SCRIPTPATH/.bash_profile" "$HOME/.bash_profile"
 bk_if_exists "$HOME/.profile"
 ln -s "$SCRIPTPATH/.profile" "$HOME/.profile"
 
-# Vim 
-bk_if_exists "$HOME/.vim"
-ln -s "$SCRIPTPATH/.vim" "$HOME/.vim"
-
-bk_if_exists "$HOME/.vimrc"
-ln -s "$SCRIPTPATH/.vim/.vimrc" "$HOME/.vimrc"
-
 # UI
 bk_if_exists "$HOME/backgrounds"
 ln -s "$SCRIPTPATH/backgrounds" "$HOME/backgrounds"
@@ -56,7 +47,8 @@ bk_if_exists "$HOME/.xinitrc"
 ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
 # Compile ycm
-# python3 "$SCRIPTPATH/.vim/bundle/YouCompleteMe/install.py" --clang-completer
+# python3 "$SCRIPTPATH/.vim/bundle/YouCompleteMe/install.py" --rust-completer \
+#     --java-completer
 
 source "$HOME/.profile"
 source "$HOME/.bash_profile"
