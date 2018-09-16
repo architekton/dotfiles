@@ -20,3 +20,5 @@ alias sc="scrot $HOME/scrots/%Y-%m-%d::%H:%M:%S.png -s -e 'xclip -selection clip
 # Git
 alias csig='git log --show-signature'
 alias dprev='git diff HEAD~ HEAD'
+
+

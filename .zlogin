@@ -1,4 +1,2 @@
-eval `keychain --agents gpg,ssh`
-
-startx
+eval `keychain --agents gpg,ssh --noask`
 
