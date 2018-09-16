@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 BACKUP_DIR="$HOME/dotfiles.bk"
 
@@ -27,14 +27,14 @@ if [ $? -ne 0 ]; then
 fi
 
 # Shell & env related
-bk_if_exists "$HOME/.bashrc"
-ln -s "$SCRIPTPATH/.bashrc" "$HOME/.bashrc"
+bk_if_exists "$HOME/.zshrc"
+ln -s "$SCRIPTPATH/.zshrc" "$HOME/.zshrc"
 
-bk_if_exists "$HOME/.bash_profile"
-ln -s "$SCRIPTPATH/.bash_profile" "$HOME/.bash_profile"
+bk_if_exists "$HOME/.zlogin"
+ln -s "$SCRIPTPATH/.zlogin" "$HOME/.zlogin"
 
-bk_if_exists "$HOME/.profile"
-ln -s "$SCRIPTPATH/.profile" "$HOME/.profile"
+bk_if_exists "$HOME/.zsh"
+ln -s "$SCRIPTPATH/.zsh" "$HOME/.zsh"
 
 # UI
 bk_if_exists "$HOME/backgrounds"
@@ -50,6 +50,5 @@ ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 # python3 "$SCRIPTPATH/.vim/bundle/YouCompleteMe/install.py" --rust-completer \
 #     --java-completer
 
-source "$HOME/.profile"
-source "$HOME/.bash_profile"
-source "$HOME/.bashrc"
+source "$HOME/.zlogin"
+source "$HOME/.zshrc"

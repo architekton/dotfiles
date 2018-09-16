@@ -1,14 +1,14 @@
-#
-# ~/.bashrc
-#
-# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Disable .bash_history
-unset HISTFILE
+autoload -U compinit
+compinit
 
-# Cyan Magenta Yellow and Default arrow
-PS1='[\W]\[\e[36m\]-\[\e[35m\]-\[\e[33m\]-\[\e[39m\]> '
+source $HOME/.zsh/minimal.zsh
+
+export PATH=$PATH:$HOME/scripts
+export CHROOT=$HOME/chroot
+
+setopt histignoredups no_sharehistory
 
 # General
 alias ls='ls --color=auto --group-directories-first'
