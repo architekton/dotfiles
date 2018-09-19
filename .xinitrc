@@ -8,6 +8,9 @@ xset fp rehash &
 # Background
 feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 
+# ssh
+eval `ssh-agent`
+
 # Status bar
 dwmstat.sh &
 
