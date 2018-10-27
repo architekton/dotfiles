@@ -10,6 +10,11 @@ export CHROOT=$HOME/chroot
 
 setopt histignoredups no_sharehistory
 
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+
+fortune
+
 # General
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -la --color=auto'
