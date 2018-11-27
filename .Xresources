@@ -19,7 +19,8 @@ URxvt*shading:          25
 
 ! perl extensions
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-
 URxvt.iso14755: False
-
 URxvt.perl-ext-common: default,clipboard
+
+! handle Meta (Alt) + keypress to set the 8th bit
+URxvt.meta8: true

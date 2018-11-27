@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env sh
+
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 # Fonts
@@ -12,9 +13,7 @@ feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 eval `ssh-agent`
 
 # Status bar
-dwmstat.sh &
+dwmstat &
 
 # Window manager
-exec dwm
-
-
+startdwm

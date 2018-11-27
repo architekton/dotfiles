@@ -3,27 +3,21 @@
 autoload -U compinit
 compinit
 
-source $HOME/.zsh/minimal.zsh
+# Perl local build lib
+export PERL_MB_OPT="--install_base $HOME/.local/lib/perl5";
+export PERL_MM_OPT="INSTALL_BASE=$HOME/.local/lib/perl5";
+export PERL5LIB="$HOME/.local/lib/perl5/lib/perl5";
+export PATH="$HOME/.local/lib/perl5/bin:$PATH";
+export PERL_LOCAL_LIB_ROOT="$HOME/.local/lib/perl5:$PERL_LOCAL_LIB_ROOT";
 
-export PATH=$PATH:$HOME/scripts
+export PATH=$HOME/scripts:$PATH
 export CHROOT=$HOME/chroot
+export EDITOR=vim
 
 setopt histignoredups no_sharehistory
 
 bindkey "${terminfo[khome]}" beginning-of-line
 bindkey "${terminfo[kend]}" end-of-line
 
-fortune
-
-# General
-alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -la --color=auto'
-
-alias bk="rsync -azv --delete --delete-excluded --exclude=.cache $HOME /mnt/backup"
-alias sc="scrot $HOME/scrots/%Y-%m-%d::%H:%M:%S.png -s -e 'xclip -selection clipboard -t image/png < \$f'"
-
-# Git
-alias csig='git log --show-signature'
-alias dprev='git diff HEAD~ HEAD'
-
-
+source $HOME/.zsh/minimal.zsh
+source $HOME/.zsh/aliases.zsh
