@@ -10,17 +10,20 @@
 
 URxvt*geometry:         112x22
 URxvt*font:             xft:xos4 Terminus:size=12
-URxvt*urlLauncher:      firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:  true
 URxvt*scrollColor:      #000000
 URxvt*transparent:      true
-URxvt*shading:          25
+URxvt*shading:          40
+URxvt*saveLines:        50000
 
 ! perl extensions
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard
+URxvt.perl-ext-common: default,clipboard,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 2
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&amp;@#-]*[\\w/-]
 
 ! handle Meta (Alt) + keypress to set the 8th bit
 URxvt.meta8: true
