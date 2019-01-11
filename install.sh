@@ -30,6 +30,9 @@ fi
 bk_if_exists "$HOME/.zshrc"
 ln -s "$SCRIPTPATH/.zshrc" "$HOME/.zshrc"
 
+bk_if_exists "$HOME/.zshenv"
+ln -s "$SCRIPTPATH/.zshenv" "$HOME/.zshenv"
+
 bk_if_exists "$HOME/.zsh"
 ln -s "$SCRIPTPATH/.zsh" "$HOME/.zsh"
 
@@ -43,4 +46,6 @@ ln -s "$SCRIPTPATH/.Xresources" "$HOME/.Xresources"
 bk_if_exists "$HOME/.xinitrc"
 ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
+source "$HOME/.zshenv"
 source "$HOME/.zshrc"
+
