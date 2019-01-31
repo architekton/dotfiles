@@ -6,6 +6,7 @@ export PATH="$HOME/.local/lib/perl5/bin:$PATH";
 export PERL_LOCAL_LIB_ROOT="$HOME/.local/lib/perl5:$PERL_LOCAL_LIB_ROOT";
 
 # Go
+export GOPATH=$HOME/go
 export PATH=$HOME/go/bin:$PATH
 
 export PATH=$HOME/scripts:$PATH

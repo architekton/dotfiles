@@ -14,3 +14,8 @@ alias re="cd $HOME/pr/re"
 alias csig='git log --show-signature'
 alias dprev='git diff HEAD~ HEAD'
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
