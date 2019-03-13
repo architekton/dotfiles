@@ -36,10 +36,7 @@ ln -s "$SCRIPTPATH/.zshenv" "$HOME/.zshenv"
 bk_if_exists "$HOME/.zsh"
 ln -s "$SCRIPTPATH/.zsh" "$HOME/.zsh"
 
-# UI
-bk_if_exists "$HOME/backgrounds"
-ln -s "$SCRIPTPATH/backgrounds" "$HOME/backgrounds"
-
+# X
 bk_if_exists "$HOME/.Xresources"
 ln -s "$SCRIPTPATH/.Xresources" "$HOME/.Xresources"
 
@@ -48,4 +45,3 @@ ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
 source "$HOME/.zshenv"
 source "$HOME/.zshrc"
-
