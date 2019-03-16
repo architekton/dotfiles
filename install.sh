@@ -43,5 +43,14 @@ ln -s "$SCRIPTPATH/.Xresources" "$HOME/.Xresources"
 bk_if_exists "$HOME/.xinitrc"
 ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
+# Config
+if [ ! -d "$HOME/.config" ]; then
+    mkdir -p "$HOME/.config"
+fi
+
+bk_if_exists "$HOME/.config/dunst"
+ln -s "$SCRIPTPATH/.config/dunst" "$HOME/.config/dunst"
+
+
 source "$HOME/.zshenv"
 source "$HOME/.zshrc"

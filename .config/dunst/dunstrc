@@ -1,0 +1,69 @@
+[global]
+    # Settings
+    browser = /usr/bin/firefox -new-tab
+    dmenu = /usr/bin/dmenu -p dunst:
+    startup_notification = true
+    bounce_freq = 0
+    monitor = 0
+    follow = none
+    history_length = 20
+    idle_threshold = 120
+    ignore_newline = no
+    indicate_hidden = yes
+    show_age_threshold = 60
+    show_indicators = yes
+    sort = yes
+    sticky_history = yes
+    word_wrap = yes
+
+    ## GUI settings
+    frame_width = 1
+    frame_color = "#222222"
+    alignment = left
+    markup = yes
+    # geometry [{width}]x{height}][+/-{x}+/-{y}]
+    geometry = "250x5-30+20"
+    font = Terminus (TTF) 12
+    format = "<b>%s</b>\n%b"
+    separator_color = frame
+    separator_height = 1
+    horizontal_padding = 8
+    line_height = 0
+    padding = 8
+    transparency = 70
+    shrink = no
+
+[shortcuts]
+    # close notification
+    close = mod4+m
+
+    # close all notifications
+    close_all = mod4+shift+m
+
+    # redisplay last message(s)
+    history = mod4+n
+
+    # context menu
+     context = mod4+shift+i
+
+[urgency_low]
+    background = "#222222"
+    foreground = "#888888"
+    timeout = 10
+
+[urgency_normal]
+    background = "#285577"
+    foreground = "#ffffff"
+    timeout = 15
+
+[urgency_critical]
+    background = "#900000"
+    foreground = "#ffffff"
+    timeout = 0
+
+#[irc]
+#    appname = "weechat"
+#    format  = "%s: %b"
+#    urgency = low
+#    background = "#83c83d"
+#    foreground = "#000000"
