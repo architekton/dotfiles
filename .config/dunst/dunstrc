@@ -22,7 +22,7 @@
     alignment = left
     markup = yes
     # geometry [{width}]x{height}][+/-{x}+/-{y}]
-    geometry = "250x5-30+20"
+    geometry = "250x20-30+20"
     font = Terminus (TTF) 12
     format = "<b>%s</b>\n%b"
     separator_color = frame
@@ -47,18 +47,18 @@
      context = mod4+shift+i
 
 [urgency_low]
-    background = "#222222"
+    background = "#111111"
     foreground = "#888888"
     timeout = 10
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
-    timeout = 15
+    background = "#111111"
+    foreground = "#ffff66"
+    timeout = 24
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
+    background = "#111111"
+    foreground = "#ff0000"
     timeout = 0
 
 #[irc]
