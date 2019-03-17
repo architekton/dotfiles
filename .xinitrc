@@ -9,9 +9,6 @@ xset fp rehash &
 # Background
 feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 
-# ssh
-eval `ssh-agent`
-
 # Notification
 dunst -config "$HOME/.config/dunst/dunstrc" &
 
