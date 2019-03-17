@@ -19,3 +19,5 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
+
+alias urldecode="python -c 'import urllib.parse; import sys; print(urllib.parse.unquote(sys.argv[1]))'"
