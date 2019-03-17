@@ -15,5 +15,8 @@ dunst -config "$HOME/.config/dunst/dunstrc" &
 # Status bar
 dwmstat &
 
+# Redshift script
+tint &
+
 # Window manager
 startdwm
