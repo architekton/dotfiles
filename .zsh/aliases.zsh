@@ -21,3 +21,16 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 alias urldecode="python -c 'import urllib.parse; import sys; print(urllib.parse.unquote(sys.argv[1]))'"
+
+function sd
+{
+    [[ -d "$(pwd)" ]] || return 1
+    echo "$(pwd)" > ~/.last_dir
+}
+
+function rd
+{
+    local path=$(head -n 1 ~/.last_dir)
+    [[ -d "$path" ]] || return 1
+    cd "$path"
+}

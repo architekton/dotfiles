@@ -6,9 +6,6 @@ zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 zstyle ':completion:*' rehash true
 
-# Command correction
-setopt correctall
-
 # Navigate without typing cd
 setopt autocd
 
