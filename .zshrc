@@ -16,7 +16,6 @@ setopt extendedglob
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
-
 setopt histignorealldups sharehistory
 
 bindkey "${terminfo[khome]}" beginning-of-line

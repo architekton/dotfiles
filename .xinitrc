@@ -10,7 +10,10 @@ xset fp rehash &
 feh --bg-scale "$HOME/backgrounds/bg.jpg" &
 
 # Notification
-dunst -config "$HOME/.config/dunst/dunstrc" &
+dunst &
+
+# Compositor
+compton &
 
 # Status bar
 dwmstat &

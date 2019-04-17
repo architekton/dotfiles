@@ -30,7 +30,7 @@
     horizontal_padding = 8
     line_height = 0
     padding = 8
-    transparency = 70
+    transparency = 10
     shrink = no
 
 [shortcuts]

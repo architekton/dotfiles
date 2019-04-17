@@ -1,29 +1,19 @@
-!------------------------------------------------------------------------------
-! c o l o r -  s e t t i n g s
+st.alpha: 0.4
+st.font: Monospace-11;
 
-*background: #222222
-*foreground: #999999
-
-
-!------------------------------------------------------------------------------
-! u r x v t
-
-URxvt*geometry:         112x22
-URxvt*font:             xft:xos4 Terminus:size=12
-URxvt*scrollBar:        false
-URxvt*scrollBar_right:  true
-URxvt*scrollColor:      #000000
-URxvt*transparent:      true
-URxvt*shading:          40
-URxvt*saveLines:        50000
-
-! perl extensions
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-URxvt.perl-ext-common: default,clipboard,matcher
-URxvt.urlLauncher: firefox
-URxvt.matcher.button: 2
-URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&amp;@#-]*[\\w/-]
-
-! handle Meta (Alt) + keypress to set the 8th bit
-URxvt.meta8: true
+*.color0: #000000
+*.color1: #cc241d
+*.color2: #98971a
+*.color3: #d79921
+*.color4: #458588
+*.color5: #b16286
+*.color6: #689d6a
+*.color7: #a89984
+*.color8: #928374
+*.color9: #fb4934
+*.color10: #b8bb26
+*.color11: #fabd2f
+*.color12: #83a598
+*.color13: #d3869b
+*.color14: #8ec07c
+*.color15: #ebdbb2

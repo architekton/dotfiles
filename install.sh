@@ -51,6 +51,9 @@ fi
 bk_if_exists "$HOME/.config/dunst"
 ln -s "$SCRIPTPATH/.config/dunst" "$HOME/.config/dunst"
 
+bk_if_exists "$HOME/.config/compton"
+ln -s "$SCRIPTPATH/.config/compton" "$HOME/.config/compton"
+
 
 source "$HOME/.zshenv"
 source "$HOME/.zshrc"
