@@ -5,7 +5,6 @@ alias vim='nvim'
 alias mutt='neomutt'
 
 alias bk="rsync -azv --delete --delete-excluded --exclude=.cache $HOME /mnt/backup"
-alias sc="scrot $HOME/scrots/%Y-%m-%d::%H:%M:%S.png -s -e 'xclip -selection clipboard -t image/png < \$f'"
 alias pmemsort="ps -eo size,pid,user,command --sort -size | awk '{ hr=\$1/1024 ; printf(\"%13.2f Mb \",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf(\"%s \",\$x) } print "" }'"
 
 alias ar="cd $HOME/pr/ar"

@@ -1,4 +1,4 @@
-[[ ! -o interactive || -o login ]] && return
+[[ ! -o interactive ]] && return
 
 # Completion
 autoload -U compinit && compinit

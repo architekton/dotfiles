@@ -18,8 +18,5 @@ compton &
 # Status bar
 dwmstat &
 
-# Redshift script
-tint &
-
 # Window manager
 startdwm
