@@ -43,6 +43,10 @@ ln -s "$SCRIPTPATH/.Xresources" "$HOME/.Xresources"
 bk_if_exists "$HOME/.xinitrc"
 ln -s "$SCRIPTPATH/.xinitrc" "$HOME/.xinitrc"
 
+# Tmux
+bk_if_exists "$HOME/.tmux.conf"
+ln -s "$SCRIPTPATH/.tmux.conf" "$HOME/.tmux.conf"
+
 # Config
 if [ ! -d "$HOME/.config" ]; then
     mkdir -p "$HOME/.config"
